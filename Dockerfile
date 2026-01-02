@@ -16,7 +16,7 @@ RUN printf '%s\n' \
 'var builder = WebApplication.CreateBuilder(args);' \
 'var app = builder.Build();' \
 '' \
-'app.MapPost("/solve", async ([FromBody] SolveRequest request) =>' \
+'app.MapPost("/solve", async ([FromBody] SolverRequest request) =>' \
 '{' \
 '    try' \
 '    {' \
