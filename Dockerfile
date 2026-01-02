@@ -73,7 +73,7 @@ RUN printf '%s\n' \
 '' \
 'app.Run();' \
 '' \
-'public record SolveRequest(string Deck);' > Program.cs
+'public record SolverRequest(string Deck);' > Program.cs
 RUN dotnet restore
 RUN dotnet publish -c Release -o /api
 # Final runtime image - needs BOTH .NET 7.0 and 8.0 runtimes
